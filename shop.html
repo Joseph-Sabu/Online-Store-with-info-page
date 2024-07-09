@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Fiesta Shop</title>
+    <link rel="stylesheet" href="shop_style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="shop_script.js"></script>
+</head>
+<body>
+    <nav> <a href ="home.html" target="_blank">Home</a> </nav>
+    <br>
+    <form id="shop_form">
+
+        <label for="customer_name">Enter your Name</label>
+        <input type="text" id="customer_name" name="customer_name" placeholder="Enter your name"> <br>
+
+        <label for="customer_number">Enter your Phone Number</label>
+        <input type="text" id= "customer_number" name="customer_number" placeholder= "(XXX)-XXX-XXXX"> <br>
+
+        <label for="dresses">Number of Dresses</label>
+        <input type ="text" id="dresses" name="dresses"> <br>
+
+        <label for="jackets">Number of Jackets</label>
+        <input type ="text" id="jackets" name="jackets"> <br>
+
+        <label for="shirts">Number of Shirts</label>
+        <input type ="text" id="shirts" name="shirts"> <br>
+
+        <div id="errors_div" style="color: red;"></div>
+
+        <button type="submit">Generate Invoice</button>
+        
+    </form>
+
+    <div id="invoice"></div>
+</body>
+</html>
